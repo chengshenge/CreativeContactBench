@@ -167,4 +167,9 @@ lighting while keeping the strict renderer contract.
 - RobotSmith and BlenderKit assets remain subject to their upstream licenses and are not redistributed here.
 - The task-configured example requires prepared third-party meshes. The JSON records exact IDs and expected paths,
   and the runner reports every missing file before Genesis starts.
-- This repository does not currently declare an open-source license. The maintainer should add an appropriate `LICENSE` before distributing it outside the intended group.
+
+## License
+
+Code and original documentation in this repository are licensed under the
+[Apache License 2.0](LICENSE). The benchmark dataset, model outputs, and third-party
+software or assets retain their own applicable licenses and terms.

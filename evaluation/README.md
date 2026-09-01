@@ -138,4 +138,8 @@ Tests are fully offline:
 python -m unittest discover -s evaluation/tests -v
 ```
 
-This repository currently does not declare an open-source license. Reusers should contact the repository owner until a license is added.
+## License
+
+The evaluation pipeline and original documentation are licensed under the
+[Apache License 2.0](../LICENSE). The benchmark dataset, model outputs, and third-party
+dependencies retain their own applicable licenses and terms.
