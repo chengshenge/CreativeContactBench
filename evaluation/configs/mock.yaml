@@ -1,0 +1,26 @@
+dataset:
+  repo_id: chengshengge/CreativeContactBench-pilot
+  revision: d8fc98ae30bf1233518330215a6e57f990565d94
+  expected_tasks: 67
+
+prompt:
+  path: prompts/vlm_evaluator_v1.2.txt
+  version: v1.2
+  sha256: a17d126bfd1da70d1473c997a26a53fe541bd99d5f2e561fbf49d6449b8979a1
+
+response_schema:
+  path: schemas/vlm_response_v1.schema.json
+
+run:
+  backend: mock
+  model_name: deterministic-mock-v1
+  task_ids: all
+  retry_api_errors: false
+  retry_invalid_response: false
+  repair_invalid_json: false
+
+generation:
+  store: false
+
+output:
+  directory: runs
