@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://creativecontactbench.local/schemas/submission_v1.schema.json",
+  "title": "CreativeContactBench standard submission v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "benchmark", "dataset", "evaluator", "model", "run", "results"],
+  "properties": {
+    "format": {"const": "creativecontactbench-standard-v1"},
+    "benchmark": {"const": "CreativeContactBench"},
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo_id", "revision", "task_count"],
+      "properties": {
+        "repo_id": {"const": "chengshengge/CreativeContactBench-pilot"},
+        "revision": {"const": "d8fc98ae30bf1233518330215a6e57f990565d94"},
+        "task_count": {"const": 67}
+      }
+    },
+    "evaluator": {"type": "object"},
+    "model": {
+      "type": "object",
+      "required": ["name", "revision", "backend", "returned_model_ids"]
+    },
+    "run": {
+      "type": "object",
+      "required": ["run_id", "status", "started_at", "completed_at", "valid_json", "semantically_valid", "failures"]
+    },
+    "results": {
+      "type": "array",
+      "minItems": 67,
+      "maxItems": 67,
+      "items": {"$ref": "#/$defs/taskResult"}
+    }
+  },
+  "$defs": {
+    "taskResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "ratings", "overall_ranking", "confidence"],
+      "properties": {
+        "task_id": {"type": "string", "pattern": "^task-[0-9]{2}$"},
+        "ratings": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["A", "B", "C", "D"],
+          "properties": {
+            "A": {"$ref": "#/$defs/rating"},
+            "B": {"$ref": "#/$defs/rating"},
+            "C": {"$ref": "#/$defs/rating"},
+            "D": {"$ref": "#/$defs/rating"}
+          }
+        },
+        "overall_ranking": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 4,
+            "uniqueItems": true,
+            "items": {"type": "string", "enum": ["A", "B", "C", "D"]}
+          }
+        },
+        "confidence": {"type": "integer", "minimum": 1, "maximum": 5}
+      }
+    },
+    "rating": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["expected_task_effectiveness", "embodied_feasibility", "functional_creativity"],
+      "properties": {
+        "expected_task_effectiveness": {"type": "integer", "minimum": 1, "maximum": 5},
+        "embodied_feasibility": {"type": "integer", "minimum": 1, "maximum": 5},
+        "functional_creativity": {"type": "integer", "minimum": 1, "maximum": 5}
+      }
+    }
+  }
+}

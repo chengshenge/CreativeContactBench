@@ -11,3 +11,11 @@ __pycache__/
 .idea/
 .vscode/
 *.log
+*.env
+.env
+.env.*
+.secrets/
+evaluation/runs/
+evaluation/.venv/
+evaluation/.pytest_cache/
+evaluation/**/__pycache__/

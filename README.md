@@ -1,4 +1,40 @@
-# Genesis Scene Kit
+# CreativeContactBench
+
+CreativeContactBench evaluates whether vision-language models can judge robot manipulation strategies from a scene image, a task instruction, and four candidate strategies. The public benchmark pipeline downloads a pinned dataset revision from Hugging Face, evaluates every task in canonical option order, validates the model's JSON output, and writes a reproducible standard result package.
+
+## Evaluate a VLM
+
+The complete evaluator is in [`evaluation/`](evaluation/README.md). It supports:
+
+- closed-source models through the official OpenAI Responses API;
+- open-source VLMs served by an OpenAI-compatible endpoint such as vLLM;
+- an offline deterministic mock backend for installation and CI checks.
+
+Quick start:
+
+```bash
+git clone https://github.com/chengshenge/CreativeContactBench.git
+cd CreativeContactBench
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ./evaluation
+
+ccbench-eval validate-data --config evaluation/configs/mock.yaml
+ccbench-eval run --config evaluation/configs/mock.yaml --limit 1
+```
+
+For a real benchmark submission, copy one of the model configuration templates, provide credentials only through an environment variable, and run all 67 tasks without `--limit`. A completed standard run contains `submission.json`, `manifest.json`, `results.jsonl`, `summary.csv`, `summary.md`, `raw_responses/`, and `code_snapshot_sha256.json`.
+
+See the [evaluation documentation](evaluation/README.md) for OpenAI and vLLM commands, output definitions, validation, and submission guidance.
+
+## Dataset
+
+- Hugging Face: [`chengshengge/CreativeContactBench-pilot`](https://huggingface.co/datasets/chengshengge/CreativeContactBench-pilot)
+- Standard evaluation revision: `d8fc98ae30bf1233518330215a6e57f990565d94`
+- Standard evaluator prompt: `evaluation/prompts/vlm_evaluator_v1.2.txt`
+- Tasks: `task-01` through `task-67`
+
+## Genesis Scene Kit
 
 A reusable Genesis scene toolkit extracted from our benchmark scene-generation pipeline. It focuses on strict RayTracer rendering, reproducible camera configuration, RobotSmith single-arm assets, structured outputs, and run manifests instead of publishing every experimental revision of each benchmark task.
 
@@ -17,8 +53,8 @@ A reusable Genesis scene toolkit extracted from our benchmark scene-generation p
 Python 3.11, an NVIDIA GPU, and a recent graphics driver are recommended. Run the following commands in PowerShell:
 
 ```powershell
-git clone https://github.com/chengshenge/Genesis_scene.git
-cd Genesis_scene
+git clone https://github.com/chengshenge/CreativeContactBench.git
+cd CreativeContactBench
 
 py -3.11 -m venv .venv
 Set-ExecutionPolicy -Scope Process Bypass

@@ -1,0 +1,35 @@
+dataset:
+  repo_id: chengshengge/CreativeContactBench-pilot
+  revision: d8fc98ae30bf1233518330215a6e57f990565d94
+  expected_tasks: 67
+
+prompt:
+  path: prompts/vlm_evaluator_v1.2.txt
+  version: v1.2
+  sha256: a17d126bfd1da70d1473c997a26a53fe541bd99d5f2e561fbf49d6449b8979a1
+
+response_schema:
+  path: schemas/vlm_response_v1.schema.json
+
+run:
+  backend: openai_compatible
+  model_name: Qwen/Qwen3-VL-4B-Instruct
+  task_ids: all
+  retry_api_errors: false
+  retry_invalid_response: false
+  repair_invalid_json: false
+
+generation:
+  model: Qwen/Qwen3-VL-4B-Instruct
+  model_revision: REPLACE_WITH_IMMUTABLE_MODEL_REVISION
+  temperature: 0
+  max_tokens: 1600
+  timeout: 300
+  store: false
+
+endpoint:
+  base_url: http://127.0.0.1:8000/v1
+  api_key_env: CCBENCH_ENDPOINT_API_KEY
+
+output:
+  directory: runs
