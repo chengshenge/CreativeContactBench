@@ -38,6 +38,8 @@ See the [evaluation documentation](evaluation/README.md) for OpenAI and vLLM com
 
 A reusable Genesis scene toolkit extracted from our benchmark scene-generation pipeline. It focuses on strict RayTracer rendering, reproducible camera configuration, RobotSmith single-arm assets, structured outputs, and run manifests instead of publishing every experimental revision of each benchmark task.
 
+CreativeContactBench is an independent project. The repository-specific evaluation, scene orchestration, and rendering-helper code is maintained here; Genesis supplies the simulation and rendering runtime, while referenced robot descriptions and visual assets retain their original authorship and terms. See [Third-party notices](THIRD_PARTY_NOTICES.md) for the exact boundaries and sources.
+
 ![Ray-traced tabletop preview](docs/images/raytraced_tabletop_preview.png)
 
 ## What Is Included
@@ -172,4 +174,5 @@ lighting while keeping the strict renderer contract.
 
 Code and original documentation in this repository are licensed under the
 [Apache License 2.0](LICENSE). The benchmark dataset, model outputs, and third-party
-software or assets retain their own applicable licenses and terms.
+software or assets retain their own applicable licenses and terms. See
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source attribution and license scope.

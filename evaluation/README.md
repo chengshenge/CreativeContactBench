@@ -142,4 +142,5 @@ python -m unittest discover -s evaluation/tests -v
 
 The evaluation pipeline and original documentation are licensed under the
 [Apache License 2.0](../LICENSE). The benchmark dataset, model outputs, and third-party
-dependencies retain their own applicable licenses and terms.
+dependencies retain their own applicable licenses and terms. Repository-wide attribution
+and license boundaries are documented in [`THIRD_PARTY_NOTICES.md`](../THIRD_PARTY_NOTICES.md).
