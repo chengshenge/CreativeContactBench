@@ -1,0 +1,21 @@
+{
+  "version": "three-condition-v5",
+  "conditions": [
+    "rgb_only",
+    "rgb_description",
+    "rgb_tactile"
+  ],
+  "rgb_only": "Unmodified original v1.2 prompt with original task/ABCD; original RGB, blank white right panel; no contact description, legend, or sensor words added.",
+  "rgb_description": "Original RGB with identical blank right panel; original v1.2 rubric with additional neutral contact description and proxy-source scope; no sensor map or legend.",
+  "rgb_tactile": "Same original RGB and contact description/scope, plus frozen v4 normal-pressure/signed-shear maps, their exact legend, and necessary reading guidance.",
+  "primary_contrast": "rgb_tactile minus rgb_only: total additional contact-information package",
+  "description_ablation": "rgb_description minus rgb_only: contact-description package",
+  "tactile_increment": "rgb_tactile minus rgb_description: tactile package (maps + legend + reading guidance), not an isolated map-only effect",
+  "description_source_appendix": "The original RGB supplies the original task background and robot embodiment; it is not a rendering of the hypothetical local probe. The local contact description is additional context under declared proxy assumptions, not recovered original-scene physical ground truth. Judge the strategies for the original robot embodiment. The local probe does not execute any candidate strategy or supply a strategy-success label. Use only the evidence actually provided; do not invent unprovided observations or hidden physical properties.",
+  "tactile_source_appendix": "The original RGB is on the left; the right panel is the local simulated contact-sensor reading for the probe described above. Interpret the sensor panel using the supplied legend, including its channel names, surface names, coordinate frames, units, and fixed display ranges. Normal pressure and signed shear are different channels; a signed shear color is not negative normal pressure. These are simulated estimates under declared assumptions, not calibrated physical-sensor measurements. The legend and this reading guidance accompany the maps as one tactile information package. No QA preview, raw numerical archive, simulator metadata, or hidden parameter label is an additional input.",
+  "same_scoring_and_output_schema": true,
+  "original_task_and_ABCD_verbatim": true,
+  "one_contact_setting_per_original_task": true,
+  "task_count": 16,
+  "new_state_human_ground_truth_claimed": false
+}

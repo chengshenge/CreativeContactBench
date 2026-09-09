@@ -1,0 +1,11 @@
+{
+  "repo_id": "chengshengge/CreativeContactBench-pilot",
+  "repo_type": "dataset",
+  "revision": null,
+  "path": "multimodal/v5",
+  "manifest_sha256": "ba2793785cc48f41483a17d64c2f003360364bcf5ba37e2f0398844cd999c46e",
+  "task_count": 16,
+  "condition_count": 3,
+  "contact_family_count": 12,
+  "status": "awaiting_dataset_write_access"
+}

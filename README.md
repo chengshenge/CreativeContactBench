@@ -34,6 +34,10 @@ See the [evaluation documentation](evaluation/README.md) for OpenAI and vLLM com
 - Standard evaluator prompt: `evaluation/prompts/vlm_evaluator_v1.2.txt`
 - Tasks: `task-01` through `task-67`
 
+## Multimodal Contact Extension
+
+The [multimodal workflow](multimodal/README.md) adds 16 selected tasks with frozen RGB-only, RGB+description and RGB+tactile inputs. It includes a contact catalog, shared pressure/shear specification, pinned private Hugging Face download, input verification, three-condition inference and local human-reference analysis. This input-and-code release contains no human rankings, model outputs or evaluation results and does not change the 67-task RGB benchmark.
+
 ## Genesis Scene Kit
 
 A reusable Genesis scene toolkit extracted from our benchmark scene-generation pipeline. It focuses on strict RayTracer rendering, reproducible camera configuration, RobotSmith single-arm assets, structured outputs, and run manifests instead of publishing every experimental revision of each benchmark task.

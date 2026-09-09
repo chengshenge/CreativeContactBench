@@ -1,0 +1,12 @@
+{
+  "backend": "openai_compatible",
+  "model": "google/gemma-3-4b-it",
+  "model_name": "google/gemma-3-4b-it",
+  "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+  "api_key_env": "CCBENCH_LOCAL_API_KEY",
+  "base_url": "http://127.0.0.1:8000/v1",
+  "temperature": 0,
+  "max_tokens": 1600,
+  "store": false,
+  "timeout": 180
+}

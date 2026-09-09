@@ -1,0 +1,16 @@
+{
+  "cell_size_m": 0.002,
+  "cell_area_m2": 4e-06,
+  "fixed_normal_range_kPa": [
+    0,
+    1500.0
+  ],
+  "fixed_shear_range_kPa": [
+    -750.0,
+    750.0
+  ],
+  "shared_legend": "Simulated grid-average normal pressure p and signed tangential force densities tau_u and tau_v, all in kPa. Rows are left inner pad, right inner pad, left fingertip end, and right fingertip end. The normal-pressure scale is fixed at 0 to 1500 kPa; both shear scales are fixed at -750 to +750 kPa across every task. Each non-overlapping virtual bin is 2 by 2 mm (4 mm^2). Actual rigid-solver contact forces are projected to a virtual pad face and deposited into neighboring bins with conservative bilinear weights; force divided by bin area produces each displayed value. Here p is the component of the full contact force along the virtual pad normal; it need not equal the scalar force along the collision normal. The signed F annotation below each map is its area-integrated force in N. Normal pressure is nonnegative; signed shear colors encode direction. Inner pads use finger-local x as u and finger-local z as v; positive compression is local +y on the left and -y on the right. Fingertip ends use local x as u, local +y on the left or -y on the right as v, and local -z for positive compression. Only the common inner-pad z=32..54 mm region is displayed; omitted bins are verified zero in every channel. Zero denotes zero resolved force in this sampled bin, not proof that geometric contact is absent. These are rigid proxy simulations with assumed contact discretization, not measured or calibrated deformable-skin pressure fields. Do not infer material softness, friction coefficient, temperature, fracture, or task success from this single frame. Interpret any supported load only using the shared probe history and coordinate frame, not from normal-pressure peak alone.",
+  "normal_maps_per_task": 4,
+  "signed_shear_maps_per_task": 8,
+  "display_scale_selection": "Single round shared ceilings covering all selected physical readings before inference; no per-task normalization."
+}

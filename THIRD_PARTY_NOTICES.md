@@ -71,3 +71,7 @@ The repository's Apache-2.0 license applies to the original code and documentati
 ## Other dependencies
 
 Python packages and optional renderer components installed from package registries or upstream repositories retain their own licenses. Their appearance in a dependency manifest does not incorporate their source code into CreativeContactBench or relicense them under Apache-2.0.
+
+## Multimodal contact extension
+
+The `multimodal/` pressure projection and rendering code is project-authored. It processes saved rigid-contact forces from Genesis local proxy probes and refers to the Panda hand supplied by the Genesis asset installation. No upstream Panda URDF, robot meshes or original scene asset binaries are redistributed by this code release. Existing upstream terms still apply. The separate private Hugging Face input bundle does not change dataset or source-asset licensing.

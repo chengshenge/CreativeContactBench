@@ -1,0 +1,119 @@
+{
+  "version": "multimodal-v5",
+  "task_count": 16,
+  "contact_family_count": 12,
+  "tasks": [
+    {
+      "task_id": "task-01",
+      "contact_group": "can_heavy",
+      "contact_object_zh": "罐侧壁，双指夹持末帧",
+      "contact_mode": "CONTROLLED_GRAVITY_HOLD",
+      "pressure_only_information_limit_zh": "压力图可表法向接触分布；侧壁法向不等同竖直支持力，不能从图直接测重或证明能压平纸。"
+    },
+    {
+      "task_id": "task-05",
+      "contact_group": "task-05",
+      "contact_object_zh": "塑料盒薄边沿，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只能说明薄沿局部接触位置/分布，不测塑料软硬或证明可夹盒扫罐。"
+    },
+    {
+      "task_id": "task-06",
+      "contact_group": "task-06",
+      "contact_object_zh": "倒扣矩形锅侧壁，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只能表侧壁局部接触，不能测桌面摩擦或证明直接举锅/桌边抓取可行。"
+    },
+    {
+      "task_id": "task-07",
+      "contact_group": "task-07",
+      "contact_object_zh": "碗沿附近外壁，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只能表外壁接触，不测内容物总重、柔软度或撒落动态。"
+    },
+    {
+      "task_id": "task-08",
+      "contact_group": "task-08",
+      "contact_object_zh": "高容器侧壁，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "原instruction的heavy不由此图测得；不测重量、承载能力或垫面摩擦。"
+    },
+    {
+      "task_id": "task-10",
+      "contact_group": "can_heavy",
+      "contact_object_zh": "罐侧壁，双指夹持末帧",
+      "contact_mode": "CONTROLLED_GRAVITY_HOLD",
+      "pressure_only_information_limit_zh": "压力图可表法向接触；不能直接测重，也不测桌布刚度或证明压重/滑压能消除褶皱。"
+    },
+    {
+      "task_id": "task-13",
+      "contact_group": "task-13",
+      "contact_object_zh": "箱体侧壁，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只表侧壁接触，不测橡胶垫摩擦，不区分路线摩擦收益。"
+    },
+    {
+      "task_id": "task-24",
+      "contact_group": "book_stack_140mm",
+      "contact_object_zh": "五层书堆上方下降/夹持接近，内侧和远端表面",
+      "contact_mode": "CONTROLLED_BOOK_APPROACH_AND_CLOSURE",
+      "pressure_only_information_limit_zh": "可表当前内侧/远端在哪里受接触；不把某一零图称不可抓真值，不测书间摩擦、总重或任意方向抓取成功。"
+    },
+    {
+      "task_id": "task-25",
+      "contact_group": "held_cup",
+      "contact_object_zh": "已持杯外侧，双指内侧接触",
+      "contact_mode": "BILATERAL_INNER_CONTACT",
+      "pressure_only_information_limit_zh": "固定零重力几何接触不表重量、摩擦、滑移或持杯稳定性，不测锅上计算器风险。"
+    },
+    {
+      "task_id": "task-27",
+      "contact_group": "held_cup",
+      "contact_object_zh": "已持杯外侧，双指内侧接触",
+      "contact_mode": "BILATERAL_INNER_CONTACT",
+      "pressure_only_information_limit_zh": "只表已持杯接触，不测另一杯与砂纸摩擦或绕行收益。"
+    },
+    {
+      "task_id": "task-32",
+      "contact_group": "held_cup",
+      "contact_object_zh": "已持杯外侧，双指内侧接触",
+      "contact_mode": "BILATERAL_INNER_CONTACT",
+      "pressure_only_information_limit_zh": "只表已持杯接触，不测花瓶净空、书/瓜位移后果或稳定性。"
+    },
+    {
+      "task_id": "task-37",
+      "contact_group": "book_stack_140mm",
+      "contact_object_zh": "五层书堆上方下降/夹持接近，内侧和远端表面",
+      "contact_mode": "CONTROLLED_BOOK_APPROACH_AND_CLOSURE",
+      "pressure_only_information_limit_zh": "只表选定接近的接触分布，不测notebook跌落风险、支撑载荷或全部抓法可行性。"
+    },
+    {
+      "task_id": "task-38",
+      "contact_group": "task-38",
+      "contact_object_zh": "哑铃杆侧面，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "20 kg来自原instruction；固定几何压力图不测重，不测机器人力矩/承载或推行阻力。"
+    },
+    {
+      "task_id": "task-42",
+      "contact_group": "task-42",
+      "contact_object_zh": "台灯底座低位侧面，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只表底座局部接触，不测重心、倾覆阈值或防倒成功。"
+    },
+    {
+      "task_id": "task-43",
+      "contact_group": "task-43",
+      "contact_object_zh": "蛋壳外形侧面，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只表局部接触，不测壳体强度、软硬、损伤或破裂，不证明抓取安全。"
+    },
+    {
+      "task_id": "task-47",
+      "contact_group": "task-47",
+      "contact_object_zh": "倒扣锥桶侧壁，单指内侧轻触",
+      "contact_mode": "SINGLE_INNER_TOUCH",
+      "pressure_only_information_limit_zh": "只表侧壁接触，不测摩擦、整体可移动性或桶沿/把手真实可达性。"
+    }
+  ]
+}

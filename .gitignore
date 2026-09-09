@@ -19,3 +19,8 @@ evaluation/runs/
 evaluation/.venv/
 evaluation/.pytest_cache/
 evaluation/**/__pycache__/
+
+# Multimodal inputs are distributed separately; all evaluation artifacts stay local.
+multimodal/data/
+multimodal/runs/
+multimodal/private/

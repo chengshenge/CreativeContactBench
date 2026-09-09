@@ -1,0 +1,12 @@
+{
+  "backend": "openai_responses",
+  "model": "gpt-6-astra",
+  "model_name": "gpt-6-astra",
+  "api_key_env": "OPENAI_API_KEY",
+  "base_url": "https://api.openai.com/v1",
+  "reasoning_mode": "standard",
+  "reasoning_effort": "low",
+  "max_output_tokens": 4000,
+  "store": false,
+  "timeout": 180
+}
