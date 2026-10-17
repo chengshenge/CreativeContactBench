@@ -1,0 +1,15 @@
+inputs/
+reference/
+runs/
+deployment/
+analysis/
+*.zip
+.venv*/
+__pycache__/
+*.pyc
+frozen_input_manifest.json
+bundle_manifest.json
+run_plan.json
+provenance/original_frozen_input_manifest.json
+tests/historical_regression.json
+tests/expected_historical_results.csv

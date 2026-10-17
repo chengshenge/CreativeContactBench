@@ -1,0 +1,32 @@
+{
+  "source_experiment": "experiments/qwen_round3_rgb30_v1_20260925",
+  "source_manifest_sha256": "1e530ecdde8b944a6b6161890f19d98f335cd799ee4212017d674e70ae5321f2",
+  "source_analysis_sha256": "620185336f91be42f460b488609c8acaa4677ff36fd38b1c3a35741445c4ddc7",
+  "vendored_sources": {
+    "response_v12.py": {
+      "source": "ccbench_eval/response.py",
+      "sha256": "447dd2637dc8f89d3e5693293a8e881889fc27f0c07014a56b1828e119c36ee3"
+    },
+    "container_repair_source.py": {
+      "source": "container_repair_source.py",
+      "sha256": "bcc41ffb706b647976583522e5304e8bbdf75ffbf74bcc3fb069d5dc658d610b"
+    },
+    "holistic_alignment_baseline.py": {
+      "source": "holistic_alignment_baseline.py",
+      "sha256": "8cf1dcbf5db9ff0b00d2165a9c90db27703e1ca62c56249d01911ff0d2030cc3"
+    }
+  },
+  "analysis_extracted_unchanged_functions": [
+    "csvwrite",
+    "mean",
+    "metric",
+    "summarize",
+    "partial_ratings",
+    "latex",
+    "table_md",
+    "f",
+    "hit"
+  ],
+  "private_human_records_exported": false,
+  "model_api_calls_during_packaging": 0
+}

@@ -1,0 +1,4 @@
+httpx==0.28.1
+jsonschema==4.26.0
+huggingface-hub==1.27.0
+Pillow==12.2.0
